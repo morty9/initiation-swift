@@ -17,11 +17,16 @@ class DetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(closeViewController))
         print(student)
         print(name)
         print(classes)
         print(img)
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func closeViewController() {
+        self.dismiss(animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

@@ -40,22 +40,22 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrayName.count
-//        return arrayObj.count
+//        return arrayName.count
+        return arrayObj.count
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? Cell{
-            cell.labelName.text = arrayName[indexPath.row]
-            cell.labelClass.text = arrayClass[indexPath.row]
-            cell.img.image = UIImage(named: arrayImg[indexPath.row])
-//            let firstname = arrayObj[indexPath.row].firstname
-//            let lastname = arrayObj[indexPath.row].lastname
-//            cell.labelName.text = firstname + " " + lastname
-//            cell.labelClass.text = arrayObj[indexPath.row].classes
-//            cell.img.image = arrayObj[indexPath.row].img
+//            cell.labelName.text = arrayName[indexPath.row]
+//            cell.labelClass.text = arrayClass[indexPath.row]
+//            cell.img.image = UIImage(named: arrayImg[indexPath.row])
+            let firstname = arrayObj[indexPath.row].firstname
+            let lastname = arrayObj[indexPath.row].lastname
+            cell.labelName.text = firstname + " " + lastname
+            cell.labelClass.text = arrayObj[indexPath.row].classes
+            cell.img.image = arrayObj[indexPath.row].img
             
             return cell
         }
@@ -63,14 +63,14 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(arrayName[indexPath.row])
-        var student : DetailsViewController?
-        student?.student = arrayObj[indexPath.row]
+        let details = DetailsViewController()
+        details.student = arrayObj[indexPath.row]
         
-        student?.name = arrayName[indexPath.row]
-        student?.classes = arrayClass[indexPath.row]
-        student?.img = UIImage(named: arrayImg[indexPath.row])
+//        details.name = arrayName[indexPath.row]
+//        details.classes = arrayClass[indexPath.row]
+//        details.img = UIImage(named: arrayImg[indexPath.row])
         
+        self.present(UINavigationController(rootViewController: details), animated: true, completion: nil)
     }
     
 }

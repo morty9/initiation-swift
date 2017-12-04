@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		087EC0D51FBEE46C00EE7B15 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087EC0D31FBEE46C00EE7B15 /* DetailsViewController.swift */; };
 		087EC0D61FBEE46C00EE7B15 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 087EC0D41FBEE46C00EE7B15 /* DetailsViewController.xib */; };
-		087EC0D91FBEE91200EE7B15 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087EC0D71FBEE91200EE7B15 /* LoginViewController.swift */; };
-		087EC0DA1FBEE91200EE7B15 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 087EC0D81FBEE91200EE7B15 /* LoginViewController.xib */; };
 		087EC0DD1FBF033C00EE7B15 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087EC0DB1FBF033C00EE7B15 /* Cell.swift */; };
 		087EC0DE1FBF033C00EE7B15 /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 087EC0DC1FBF033C00EE7B15 /* Cell.xib */; };
 		0889AA1A1FD1A0B100480C7B /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0889AA191FD1A0B100480C7B /* Student.swift */; };
@@ -24,8 +22,6 @@
 /* Begin PBXFileReference section */
 		087EC0D31FBEE46C00EE7B15 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		087EC0D41FBEE46C00EE7B15 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
-		087EC0D71FBEE91200EE7B15 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		087EC0D81FBEE91200EE7B15 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		087EC0DB1FBF033C00EE7B15 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		087EC0DC1FBF033C00EE7B15 /* Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
 		0889AA191FD1A0B100480C7B /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
@@ -76,8 +72,6 @@
 				08CD9E8B1FBEDE4A00A4C0F3 /* MainViewController.xib */,
 				087EC0D31FBEE46C00EE7B15 /* DetailsViewController.swift */,
 				087EC0D41FBEE46C00EE7B15 /* DetailsViewController.xib */,
-				087EC0D71FBEE91200EE7B15 /* LoginViewController.swift */,
-				087EC0D81FBEE91200EE7B15 /* LoginViewController.xib */,
 				087EC0DB1FBF033C00EE7B15 /* Cell.swift */,
 				087EC0DC1FBF033C00EE7B15 /* Cell.xib */,
 				0889AA191FD1A0B100480C7B /* Student.swift */,
@@ -144,7 +138,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				087EC0DA1FBEE91200EE7B15 /* LoginViewController.xib in Resources */,
 				087EC0DE1FBF033C00EE7B15 /* Cell.xib in Resources */,
 				08CD9E7B1FBDE41C00A4C0F3 /* LaunchScreen.storyboard in Resources */,
 				08CD9E8D1FBEDE4A00A4C0F3 /* MainViewController.xib in Resources */,
@@ -160,7 +153,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				087EC0D91FBEE91200EE7B15 /* LoginViewController.swift in Sources */,
 				0889AA1A1FD1A0B100480C7B /* Student.swift in Sources */,
 				08CD9E711FBDE41C00A4C0F3 /* AppDelegate.swift in Sources */,
 				087EC0DD1FBF033C00EE7B15 /* Cell.swift in Sources */,
