@@ -10,6 +10,8 @@ import UIKit
 
 class DetailsViewController: UIViewController {
 
+    var student : Student
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

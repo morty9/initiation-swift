@@ -16,6 +16,15 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var arrayImg = ["nicolas_dennu.jpeg", "berangere_la_touche.jpeg", "nam_nguyen.jpeg", "jayaksan_rajaratnam.jpeg", "ahmed_hachemi.jpeg", "nicolas_poincet.jpeg", "kevin_konrad.jpeg", "maxime_boinnet.jpeg", "alexandre_menielle.jpeg", "yoann_briancourt.jpeg", "herve_coignard.jpeg", "vincent_offroy.jpeg", "fode_guirassy.jpeg", "thomas_pain_surget.jpeg", "moncef_loukili.jpeg"]
     
+    var arrayObj : [Student] = [
+        Student(lastname: "Dennu", firstname: "Nicolas", classes: "4MOC", img: UIImage(named: "nicolas_dennu.jpeg")!),
+        Student(lastname: "La Touche", firstname: "Bérangère", classes: "4MOC", img: UIImage(named: "berangere_la_touche.jpeg")!),
+        Student(lastname: "Nguyen", firstname: "Nam", classes: "4SRC", img: UIImage(named: "nam_nguyen.jpeg")!),
+        Student(lastname: "Rajaratnam", firstname: "Jeyaksan", classes: "4IW", img: UIImage(named: "jayaksan_rajaratnam.jpeg")!),
+        Student(lastname: "Hachemi", firstname: "Ahmed", classes: "4IW", img: UIImage(named: "ahmed_hachemi.jpeg")!),
+        Student(lastname: "Poincet", firstname: "Nicolas", classes: "4DJV", img: UIImage(named: "nicolas_poincet.jpeg")!),
+        Student(lastname: "Konrad", firstname: "Kevin", classes: "2I", img: UIImage(named: "kevin_konrad.jpeg")!)
+    ]
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -32,6 +41,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayName.count
+//        return arrayObj.count
     }
     
     
@@ -41,6 +51,12 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
             cell.labelName.text = arrayName[indexPath.row]
             cell.labelClass.text = arrayClass[indexPath.row]
             cell.img.image = UIImage(named: arrayImg[indexPath.row])
+//            let firstname = arrayObj[indexPath.row].firstname
+//            let lastname = arrayObj[indexPath.row].lastname
+//            cell.labelName.text = firstname + " " + lastname
+//            cell.labelClass.text = arrayObj[indexPath.row].classes
+//            cell.img.image = arrayObj[indexPath.row].img
+            
             return cell
         }
         return UITableViewCell()
@@ -48,6 +64,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(arrayName[indexPath.row])
+        
     }
     
 }
