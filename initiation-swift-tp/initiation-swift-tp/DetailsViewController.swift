@@ -10,11 +10,17 @@ import UIKit
 
 class DetailsViewController: UIViewController {
 
-    var student : Student
+    var student : Student?
+    var name : String?
+    var classes : String?
+    var img : UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(student)
+        print(name)
+        print(classes)
+        print(img)
         // Do any additional setup after loading the view.
     }
 

@@ -64,6 +64,12 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(arrayName[indexPath.row])
+        var student : DetailsViewController?
+        student?.student = arrayObj[indexPath.row]
+        
+        student?.name = arrayName[indexPath.row]
+        student?.classes = arrayClass[indexPath.row]
+        student?.img = UIImage(named: arrayImg[indexPath.row])
         
     }
     
